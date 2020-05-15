@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/device_bg"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/device_panel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="15sp"
+        android:layout_toStartOf="@id/iv_image"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#333333"
+        tools:text="123" />
+
+    <TextView
+        android:id="@+id/device_panel_type"
+        android:layout_width="50dp"
+        android:layout_height="19dp"
+        android:layout_below="@id/device_panel_name"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/device_type_bg"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        tools:ignore="SmallSp"
+        tools:text="type" />
+
+    <TextView
+        android:id="@+id/device_panel_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/device_panel_type"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#C3C5C6"
+        android:textSize="15sp"
+        tools:text="status" />
+</RelativeLayout>

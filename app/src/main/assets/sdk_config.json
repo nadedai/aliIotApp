@@ -1,0 +1,169 @@
+[
+    {
+        "name": "API 通道",
+        "doc": "/studiomobile-doc#live-api.html",
+        "classFiles": [
+            {
+                "className": "com.aliyun.iot.aep.sdk.init.APIGatewaySDKDelegate"
+            }
+        ],
+        "opt": {},
+        "version": "0.0.5",
+        "desc": "API 通道是用于调用目前平台所开放的相关接口服务，SDK 集成了验签和身份认证相关功能。",
+        "sdk_id": 16,
+        "isDefault": true
+    },
+    {
+        "name": "账号",
+        "identity": "account",
+        "doc": "/studiomobile-doc#homelink-account.html",
+        "classFiles": [
+            {
+                "className": "com.aliyun.iot.aep.sdk.init.OpenAccountSDKDelegate"
+            }
+        ],
+        "opt": {
+            "sgp_host": "sgp-sdk.openaccount.aliyun.com",
+            "oauth_consumer_key_test": "",
+            "oauth_consumer_key_online": "",
+            "oauth_consumer_secret_test": "",
+            "oauth_consumer_secret_online": "",
+            "supportAliYun": "false",
+            "ui_config": [
+                {
+                    "activity": "com.aliyun.iot.aep.oa.page.OALoginActivity",
+                    "layout": "ali_sdk_openaccount_login2",
+                    "is_select_mobile_country": "false",
+                    "params": {}
+                }
+            ]
+        },
+        "submodules": [
+            {
+                "desc": "bone 插件支持",
+                "requires": [],
+                "opt": {},
+                "dependency": "",
+                "name": "bonePlugin",
+                "classFiles": [
+                    {
+                        "className": "com.aliyun.iot.aep.sdk.submodule.OpenAccountBoneGlue"
+                    }
+                ]
+            }
+        ],
+        "version": "0.0.3.9",
+        "desc": "提供自建账号体系能力，包括注册，登录，登出，获取账号，会话管理，人机校验，登录 UI 定制等功能。",
+        "sdk_id": 20,
+        "isDefault": true
+    },
+    {
+        "name": "长连接通道",
+        "doc": "/studiomobile-doc#live-sdk-connect.html",
+        "classFiles": [
+            {
+                "className": "com.aliyun.iot.aep.sdk.init.DownstreamConnectorSDKDelegate"
+            }
+        ],
+        "opt": {
+            "pre": {
+                "channelHost": "ssl://100.67.80.75:80",
+                "autoSelectChannelHost": "false",
+                "isCheckChannelRootCrt": "false"
+            },
+            "test": {
+                "channelHost": "ssl://10.125.3.189:1883",
+                "autoSelectChannelHost": "false",
+                "isCheckChannelRootCrt": "false"
+            },
+            "release": {
+                "channelHost": "",
+                "autoSelectChannelHost": "false",
+                "isCheckChannelRootCrt": "true"
+            }
+        },
+        "submodules": [
+            {
+                "desc": "和账号绑定",
+                "requires": [],
+                "opt": {},
+                "dependency": [],
+                "name": "bindAccount",
+                "classFiles": [
+                    {
+                        "className": "com.aliyun.iot.aep.sdk.submodule.DownstreamBindAccountGlue"
+                    }
+                ]
+            },
+            {
+                "desc": "bone 插件长连接支持",
+                "requires": [],
+                "opt": {},
+                "dependency": [],
+                "name": "boneSupport",
+                "classFiles": [
+                    {
+                        "className": "com.aliyun.iot.aep.sdk.submodule.DownstreamBonePluginGlue"
+                    }
+                ]
+            }
+        ],
+        "version": "0.0.3",
+        "desc": "长连接通道SDK，提供 IoT 业务协议封装的云端数据下行能力；为 App 提供订阅、发布消息的实时能力, 和支持请求响应模型。",
+        "sdk_id": 12,
+        "isDefault": true
+    },
+    {
+        "name": "添加设备",
+        "doc": "/studiomobile-doc#homelink-adddevice.html",
+        "classFiles": [],
+        "opt": {},
+        "submodules": [
+            {
+                "desc": "Bone 插件支持",
+                "requires": [],
+                "opt": {},
+                "dependency": [],
+                "name": "bonePlugin",
+                "classFiles": [
+                    {
+                        "className": "com.aliyun.iot.aep.sdk.submodule.DeviceCenterGlue"
+                    }
+                ]
+            }
+        ],
+        "version": "1.5.1",
+        "desc": "提供了把 WiFi 设备配置上家庭路由器以及局域网内已联网设备的发现能力，具体方案包括一键广播配网、手机热点配网、智能路由器配网以及设备间相互配网等。",
+        "sdk_id": 21,
+        "isDefault": false
+    },
+    {
+        "name": "设备控制",
+        "doc": "/studiomobile-doc#homelink-ctrldevice.html",
+        "classFiles": [
+            {
+                "className": "com.aliyun.iot.aep.sdk.init.ThingModuleSDKDelegate"
+            }
+        ],
+        "opt": {},
+        "process": "",
+        "submodules": [
+            {
+                "desc": "Bone 插件支持",
+                "requires": [],
+                "opt": {},
+                "dependency": [],
+                "name": "bonePlugin",
+                "classFiles": [
+                    {
+                        "className": "com.aliyun.iot.aep.sdk.submodule.ThingModuleBoneGlue"
+                    }
+                ]
+            }
+        ],
+        "version": "1.3.1.1",
+        "desc": "设备模型 SDK 提供了 App 端的设备模型（属性，事件，服务），用来开发设备界面，实现手机对设备的查看和控制。",
+        "sdk_id": 22,
+        "isDefault": false
+    }
+]

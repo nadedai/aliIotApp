@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0FFFF"
+    >
+    <TextView
+        android:id="@+id/time"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="time"
+        android:textColor="#FF6A6A"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tickerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#FF6A6A"
+            android:textSize="80sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="℃"
+            android:textSize="30sp"
+            android:textColor="#FF6A6A"/>
+    </LinearLayout>
+
+    <com.github.zagum.switchicon.SwitchIconView
+        android:id="@+id/switchIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        app:srcCompat="@drawable/ic_stat_name"
+        app:si_animation_duration="500"
+        app:si_disabled_alpha=".5"
+        app:si_disabled_color="#b7b7b7"
+        app:si_enabled="false"
+        app:si_no_dash="true"
+        app:si_tint_color="#ff3c00" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="开关控制"
+
+        android:textSize="20sp"
+        android:textColor="#FF6A6A"/>
+</LinearLayout>

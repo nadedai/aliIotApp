@@ -1,0 +1,42 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="top.wuhaojie.library.test" >
+4
+5    <uses-sdk
+5-->E:\Android\t32\library1\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3800599752572553701.xml:5:5-74
+6        android:minSdkVersion="14"
+6-->E:\Android\t32\library1\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3800599752572553701.xml:5:15-41
+7        android:targetSdkVersion="26" />
+7-->E:\Android\t32\library1\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3800599752572553701.xml:5:42-71
+8
+9    <instrumentation
+9-->E:\Android\t32\library1\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3800599752572553701.xml:11:5-15:75
+10        android:name="android.test.InstrumentationTestRunner"
+10-->E:\Android\t32\library1\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3800599752572553701.xml:11:22-75
+11        android:functionalTest="false"
+11-->E:\Android\t32\library1\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3800599752572553701.xml:14:22-52
+12        android:handleProfiling="false"
+12-->E:\Android\t32\library1\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3800599752572553701.xml:13:22-53
+13        android:label="Tests for top.wuhaojie.library.test"
+13-->E:\Android\t32\library1\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3800599752572553701.xml:15:22-73
+14        android:targetPackage="top.wuhaojie.library.test" />
+14-->E:\Android\t32\library1\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3800599752572553701.xml:12:22-71
+15
+16    <application
+16-->E:\Android\t32\library1\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3800599752572553701.xml:7:5-9:19
+17        android:allowBackup="true"
+17-->[__tested_artifact__::library1] E:\Android\t32\library1\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2ffb88316df49107418be0872d7babe4\core-1.0.0\AndroidManifest.xml:22:18-86
+19        android:debuggable="true"
+19-->E:\Android\t32\library1\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3800599752572553701.xml:7:18-43
+20        android:label="@string/app_name"
+20-->[__tested_artifact__::library1] E:\Android\t32\library1\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-41
+21        android:supportsRtl="true" >
+21-->[__tested_artifact__::library1] E:\Android\t32\library1\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-35
+22        <uses-library android:name="android.test.runner" />
+22-->E:\Android\t32\library1\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3800599752572553701.xml:8:9-60
+22-->E:\Android\t32\library1\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3800599752572553701.xml:8:23-57
+23    </application>
+24
+25</manifest>

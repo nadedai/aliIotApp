@@ -1,0 +1,19 @@
+repositories {
+        maven {
+            url "http://maven.aliyun.com/nexus/content/repositories/releases"
+        }
+    }
+dependencies {
+    implementation 'com.aliyun.iot.aep.sdk:sdk-framework:0.0.8'
+    implementation 'com.aliyun.iot.aep.sdk:apiclient:0.0.3.1'
+    implementation 'com.aliyun.iot.aep.sdk:account-oa:0.0.3.2'
+    implementation 'com.aliyun.iot.aep.sdk:account-oa-ui:0.0.1.6'
+    implementation 'com.aliyun.ams:alicloud-android-ut:5.1.0'
+    implementation 'com.aliyun.iot.aep.sdk:iot-credential:0.0.2'
+
+    implementation 'com.aliyun.iot.aep.sdk:connectchannel:0.0.9'
+    implementation 'com.aliyun.alink.linksdk:public-tmp-ext-boneplugin:1.6.1'
+    implementation 'com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1'
+    implementation 'com.aliyun.alink.linksdk:ilop-devicecenter:1.7.2'
+
+}
